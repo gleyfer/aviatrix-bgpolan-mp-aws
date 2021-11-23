@@ -4,19 +4,19 @@ This project completely automates a topology for testing BGPoLAN multi-peer in A
 
 Copilot view of the Topology:
 
-![Copilot Topology](copilot_topology.png)
+![Copilot Topology](img/copilot_topology.png)
 
 View of instances created with default settings
 
-![Instances Created](instance_list.png)
+![Instances Created](img/instance_list.png)
 
 BGP Sessions created by the template:
 
-![BGP Sessions](bgp_sessions.png)
+![BGP Sessions](img/bgp_sessions.png)
 
 View of S2C External Conns created:
 
-![S2C List](s2c_list.png)
+![S2C List](img/s2c_list.png)
 
 The majority of the work is done by the aviatrix-demo-onprem-aws module: [aviatrix-demo-onprem-aws](https://github.com/gleyfer/aviatrix-demo-onprem-aws) 
 
