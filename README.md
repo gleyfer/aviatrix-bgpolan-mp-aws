@@ -18,6 +18,11 @@ View of S2C External Conns created:
 
 ![S2C List](img/s2c_list.png)
 
+Route list on SDWAN Transits showing ECMP paths towards onprem CIDR:
+
+![primary route list](img/route_list_primary.png)
+![secondary route list](img/route_list_secondary.png)
+
 Validation via traceroute:
 
 ```
