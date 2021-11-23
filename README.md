@@ -18,6 +18,27 @@ View of S2C External Conns created:
 
 ![S2C List](img/s2c_list.png)
 
+Validation via traceroute:
+
+```
+ubuntu@ip-10-100-0-36:~$ traceroute -n -q5 192.168.0.69
+traceroute to 192.168.0.69 (192.168.0.69), 30 hops max, 60 byte packets
+ 1  10.100.0.168  0.363 ms  0.481 ms  0.459 ms  0.416 ms  0.351 ms
+ 2  10.1.1.173  0.628 ms 10.1.1.234  1.291 ms 10.1.1.173  1.341 ms 10.1.1.234  1.320 ms 10.1.1.173  0.583 ms
+ 3  10.1.0.149  0.741 ms  0.762 ms 10.1.0.166  1.280 ms  1.271 ms  1.240 ms
+ 4  192.168.0.68  1.389 ms 192.168.0.100  1.879 ms 192.168.0.68  1.147 ms 192.168.0.100  1.796 ms  1.783 ms
+ 5  192.168.0.69  1.973 ms  1.840 ms  1.793 ms  1.828 ms  1.816 ms
+```
+
+Ethr pre-installed to do multi-threaded bandwidth testing:
+
+```
+On server: ./ethr -s -ui
+On client: ./ethr -c <server ip> -n <number of threads>
+```
+
+![Ethr UI](img/ethr.png)
+
 The majority of the work is done by the aviatrix-demo-onprem-aws module: [aviatrix-demo-onprem-aws](https://github.com/gleyfer/aviatrix-demo-onprem-aws) 
 
 **NOTE**: This template utilizes two different CSR1K offers depending on whether prioritize = price or performance. You will need to subscribe the offer depending on your choice.
