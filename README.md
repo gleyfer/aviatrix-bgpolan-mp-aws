@@ -53,6 +53,9 @@ The majority of the work is done by the aviatrix-demo-onprem-aws module: [aviatr
 # Pre-requisites:
 
 - Subscribed to relevant CSR1K offer
+- Subscribed to Aviatrix Metered offer or BYOL and [Controller Deployed](https://docs.aviatrix.com/StartUpGuides/aviatrix-cloud-controller-startup-guide.html):
+https://aws.amazon.com/marketplace/pp/prodview-leh6ufnwbl6eo
+- Sufficient Quotas (Compute, VPC, EIPs)
 - Environment variables configured for Aviatrix Terraform Provider: 
 https://registry.terraform.io/providers/AviatrixSystems/aviatrix/latest/docs#environment-variables
 - (Ideally) aws-cli installed with generated credentials file (aws configure):
