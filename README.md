@@ -2,6 +2,10 @@
 
 This project completely automates a topology for testing BGPoLAN multi-peer in AWS with CSR 1K's simulating SD-WAN head-ends and Aviatrix transits simulating the "on-prem" sd-wan appliances. An SD-WAN transit is created and test spoke with HPE enabled, along with a test client and server. You can prioritize between price or performance by modifying a single variable in the terraform.tfvars, which controls how many test clients/servers are created and the instance sizes. The number of CSRs can also be dynamically scaled via the tfvars and all of the configuration on the CSR's and Aviatrix Gateways is updated automatically.
 
+Topology:
+
+![Topology](img/topology.png)
+
 Copilot view of the Topology:
 
 ![Copilot Topology](img/copilot_topology.png)
