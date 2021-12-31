@@ -15,7 +15,7 @@ module "test_spoke" {
   source        = "terraform-aviatrix-modules/aws-spoke/aviatrix"
   name          = "prod-server"
   cidr          = "10.100.0.0/24"
-  region        = "us-west-2"
+  region        = var.aws_region
   account       = var.account
   insane_mode   = true
   instance_size = var.prioritize == "price" ? "c5n.xlarge" : "c5n.4xlarge"
